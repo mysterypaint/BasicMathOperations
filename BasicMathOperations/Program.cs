@@ -109,13 +109,10 @@ namespace BasicMathOperations {
             currQuestion++;
 
             // Print correct/incorrect message
-            if (isCorrect)
-            {
+            if (isCorrect) {
                 Console.WriteLine("Correct!");
                 correctCount++;
-            }
-            else
-            {
+            } else {
                 Console.WriteLine("Incorrect...");
                 incorrectCount++;
             }
