@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace BasicMathOperations {
     class Program {
+        // Keep track of the user's correct and incorrect answers, as well as the current question they're answering
         public static int correctCount, incorrectCount, currQuestion;
 
         static void Main(string[] args) {
-            // Keep track of the user's correct and incorrect answers
-
-            // Start the program loop; Repeat until the user wants to stop generating problems
-            bool restart = true;
-
             // Generate the math problems to ask
             String problem1, problem2, problem3, problem4;
 
@@ -22,6 +18,9 @@ namespace BasicMathOperations {
 
             // Randomly generate the numbers involved in the problems, within the operator arrays
             Random numGen = new Random();
+
+            // Start the program loop; Repeat until the user wants to stop generating problems
+            bool restart = true;
 
             do {
                 // Reset/Initialize which question we're currently answering
